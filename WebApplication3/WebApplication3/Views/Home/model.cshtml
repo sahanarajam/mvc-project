@@ -1,0 +1,17 @@
+﻿@model WebApplication3.Models.sahana
+
+@{
+    ViewBag.Title = "model";
+}
+
+<h2>model</h2>
+@foreach (var name in ViewBag.Id)
+{
+    <div class="house"></div>
+    <div class="house"></div>
+            <div>@name.Id</div>
+            <div>@name.username</div>
+            <div>@name.email</div>
+            <div>@name.password</div>
+            @Html.ActionLink("one data", "Media", "Home", new { Id = name.Id, email = name.email },null)
+}

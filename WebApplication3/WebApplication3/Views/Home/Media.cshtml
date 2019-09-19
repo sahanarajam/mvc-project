@@ -1,0 +1,42 @@
+﻿@model WebApplication3.Models.sahana
+
+@{
+    ViewBag.Title = "Media";
+}
+
+<h2>Media</h2>
+<div class="home">
+    
+    @foreach(var name in ViewBag.username)
+    {
+        <div class="house">
+
+            <div>@name.Id</div>
+            <div>@name.username</div>
+            <div>@name.email</div>
+            <div>@name.password</div>
+         
+
+
+          @Html.ActionLink("one data", "Index1", "Home", new { Id = name.Id,username = name.username },null)
+            <style>
+                .home{
+                    display:grid;
+                    grid-template-columns:1fr 1fr 1fr 1fr;
+                    background-color:pink;
+                    grid-gap:0.1em 0.1em;
+                    width:auto;
+                    height:auto;
+                }
+                .house{
+                    width:200px;
+                    height:200px;
+                    background-color:blue;
+                    color:red;
+                }
+            </style>
+
+
+        </div>
+    }
+</div>

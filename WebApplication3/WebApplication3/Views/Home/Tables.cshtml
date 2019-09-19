@@ -1,0 +1,16 @@
+﻿  public ActionResult Index1(int id, string name)
+        {
+            var data = id.ToString();
+            var test = name.ToString();
+            ViewBag.Id = data;
+            ViewBag.name = test;
+            return View();
+        }
+@model WebApplication3.Models.sahana
+
+@{
+    ViewBag.Title = "Tables";
+}
+
+<h2>Tables</h2>
+

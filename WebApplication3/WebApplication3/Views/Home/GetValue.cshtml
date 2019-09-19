@@ -1,0 +1,37 @@
+﻿@model WebApplication3.Models.sahana
+
+@{
+    ViewBag.Title = "GetValue";
+}
+
+<h2>GetValue</h2>
+@foreach (var name in )
+{
+    <div class="house">
+
+        <div>@name.Id</div>
+        <div>@name.username</div>
+        <div>@name.email</div>
+        <div>@name.password</div>
+        <style>
+            .home {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                background-color: pink;
+                grid-gap: 0.1em 0.1em;
+                width: auto;
+                height: auto;
+            }
+
+            .house {
+                width: 200px;
+                height: 200px;
+                background-color: blue;
+                color: red;
+            }
+        </style>
+
+
+    </div>
+}
+</div>
